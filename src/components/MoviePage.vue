@@ -38,7 +38,7 @@ export default {
         getValue: function() {
             var movie = this.enterName
             this.showLoader = true
-            fetch(`http://www.omdbapi.com/?t=${movie}&apikey=51c54324`)
+            fetch(`https://www.omdbapi.com/?t=${movie}&apikey=51c54324`)
                 .then((response) => { return response.json() })
                 .then((response) => {
                     console.log(response)
